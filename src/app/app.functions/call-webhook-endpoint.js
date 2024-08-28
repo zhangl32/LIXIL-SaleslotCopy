@@ -14,7 +14,7 @@ exports.main = async (context = {}) => {
 
 const callWebhookEndpoint = async (saleslotId) => {
   return axios.post(
-    `https://api-na1.hubapi.com/automation/v4/webhook-triggers/39703267/Fgue9nS`,
+    `https://api-na1.hubapi.com/automation/v4/webhook-triggers/39703267/Fgue9nS1`,
     {
         saleslotId: saleslotId,
     },
