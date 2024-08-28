@@ -1,7 +1,7 @@
 
 {
   "appFunctions": {
-    "myFunc": {
+    "copySalesLot": {
       "file": "call-webhook-endpoint.js",
       "secrets": []
     }
