@@ -1,15 +1,12 @@
 {
-  "name": "Copy started App with React",
-  "description": "This is an example of private app that shows a custom card on the Contact record tab built with React-based frontend. This card demonstrates simple handshake with HubSpot's serverless backend.",
-  "scopes": ["crm.objects.contacts.read", "crm.objects.contacts.write","crm.objects.custom.read","crm.objects.custom.write"],
-  "uid": "unique-app-name",
+  "name": "SaleslotCopy",
+  "description": "This is a SaleslotCopy of private app.",
+  "scopes": ["crm.objects.custom.read","crm.objects.custom.write"],
+  "uid": "unique-SaleslotCopy",
   "public": false,
   "extensions": {
     "crm": {
       "cards": [
-        {
-          "file": "extensions/example-card.json"
-        },
         {
           "file": "extensions/button-for-workflow.json"
         }
