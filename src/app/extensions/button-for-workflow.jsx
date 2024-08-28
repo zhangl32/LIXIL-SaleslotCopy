@@ -20,11 +20,11 @@ const Extension = ({ context, runServerless, sendAlert }) => {
   const [text, setText] = useState("");
 
   // Call serverless function to execute with parameters.
-  // The `myFunc` function name is configured inside `serverless.json`
+  // The `copySalesLot` function name is configured inside `serverless.json`
   const handleClick = async () => {
     const saleslotId = context.crm.objectId; 
     {console.log('saleslotId:' + saleslotId);}
-    const { response } = await runServerless({ name: "myFunc", parameters: { saleslotId: saleslotId } });
+    const { response } = await runServerless({ name: "copySalesLot", parameters: { saleslotId: saleslotId } });
     {console.log(response);}
     const message = response.status ? response.meesage : "error";
     sendAlert({ message: message });
