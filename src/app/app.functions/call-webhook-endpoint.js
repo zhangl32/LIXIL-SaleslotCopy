@@ -10,7 +10,7 @@ exports.main = async (context = {}) => {
   // Deal ObjectTypeId
   const objectTypeDeal = "0-3";
   // SalesLot ObjectTypeId
-  const objectTypeSalesLot = "2-32224851";
+  const objectTypeSalesLot = "2-18983127";
   // process Sales RecordId
   const {saleslotId} = context.parameters;
   // process Deal RecordId
