@@ -39,8 +39,7 @@ exports.main = async (context = {}) => {
       await callWebhookEndpoint(saleslotId);
       return { status: 'success', meesage:"Workflow initiated successfully. Please wait for 4-5 minutes while the system completes the processing.  Thank you for your patience!" };
     }else{
-      return { status: 'success', meesage:"Can not copy current saleslot because the deal stage is not W." };
-      //return { status: 'success', message: "Can't copy current saleslot because it's deal stage is not [W : Contracted]." }
+      return { status: 'success', meesage:"Can not copy current saleslot because the deal stage is not [W : Contracted]." };
     }
     
   } catch (err) {
